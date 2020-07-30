@@ -712,16 +712,15 @@ button:hover,
     margin-bottom: 3.25rem;
     border-radius: 30px;
   }
+  .newsletter__intro p {
+    font-weight: 300;
+    margin-top: -1rem;
+    width: 60%;
+  }
 }
 
 .newsletter__intro h2 {
   font-weight: 600;
-}
-
-.newsletter__intro p {
-  font-weight: 300;
-  margin-top: -1rem;
-  width: 60%;
 }
 
 @media (max-width: 63.9375em) {
