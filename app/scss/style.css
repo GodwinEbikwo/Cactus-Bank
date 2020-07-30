@@ -433,7 +433,7 @@ button:hover,
         -ms-flex-order: 2;
             order: 2;
     min-height: 41rem;
-    background-image: url("/app/images/cact.webp");
+    background-image: url("/app/images/cactus-hero.webp");
     background-size: 95%;
     background-position: right right;
     left: 4%;
