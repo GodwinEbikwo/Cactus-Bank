@@ -1,0 +1,70 @@
+.hero {
+  background-color: $offWhite;
+
+  .container {
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    position: relative;
+    padding-top: 2rem;
+    background-image: url("/app/images/cactus-hero.webp");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 17.5rem;
+
+    @include breakpoint-up(medium) {
+      min-height: 35rem;
+      background-size: 80%;
+    }
+
+    @include breakpoint-up(large) {
+      flex: 3;
+      order: 2;
+      min-height: 41rem;
+      background-image: url("/app/images/cactus-hero.webp");
+      background-size: 95%;
+      background-position: right right;
+      left: 4%;
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    @include breakpoint-up(large) {
+      flex: 2;
+      order: 1;
+      text-align: left;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  @include breakpoint-down(medium) {
+    &__cta-2 {
+      display: none;
+    }
+  }
+
+  @include breakpoint-up(large) {
+    &__cta-2 {
+      margin-left: 0.7rem;
+      background: transparent;
+      border: 1px solid $darkGreen;
+      color: $black;
+      opacity: 0.5;
+      transition: all 150ms ease-in-out;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
