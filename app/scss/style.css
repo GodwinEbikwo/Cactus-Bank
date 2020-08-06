@@ -410,8 +410,8 @@ button:hover,
 .hero__image {
   position: relative;
   padding-top: 2rem;
-  background-image: url("/app/images/cactus-hero.webp");
-  background-size: 90%;
+  background-image: url("../images/Asset 1.svg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 17.5rem;
@@ -433,8 +433,8 @@ button:hover,
         -ms-flex-order: 2;
             order: 2;
     min-height: 41rem;
-    background-image: url("/app/images/cactus-hero.webp");
-    background-size: 95%;
+    background-image: url("../images/Asset 1.svg");
+    background-size: cover;
     background-position: right right;
     left: 4%;
   }
